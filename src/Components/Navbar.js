@@ -31,7 +31,7 @@ function Navbar(props) {
                 <FaBars style={{fontSize:"20px",color:"teal"}}/>
             </div>    
             <div style={{display:togle}}>
-                <SideNavbar/>
+                <SideNavbar usr={props.user.usr} setlog={setlog} clrusr={props.clearUser}/>
                 <div style={{top:'0',bottom:"0",left:"0",right:"0",position:"fixed",zIndex:"4",backgroundColor:"rgba(0,0,0,0.3)"}} onClick={()=>setTog('none')}></div>
             </div>
             {log!==""?<LoginRegister log={log} setlog={setlog}/>:null}
