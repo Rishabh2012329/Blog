@@ -1,0 +1,15 @@
+#menue-toggler{
+    display:none
+}
+@keyframes moc{
+    from{width: 0}
+    to{width:240px;}
+}
+@media screen and (max-width: 500px) {
+    #menue-toggler{
+        display:block;
+    }
+    #mobile{
+        display: none;
+    }
+}
